@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Tec Section</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <link rel="stylesheet" href="./assets/responsive.css" />
+
+    <style></style>
+  </head>
+
+  <body class="">
+    <!-- 2nd Sec  -->
+
+    <section class="bann_sec" id="forQuotebann">
+      <div class="container">
+        <div
+          class="bannRow row align-items-center justify-content-between position-relative"
+        >
+          <div class="d-flex justify-content-between">
+            <!-- <div style="background-color: #EC6425 ; width:130px; height: 2px; margin-top: -30px;"></div> -->
+            <div class="d-flex gap-3 align-items-center">
+              <!-- Mobile Call -->
+              <a
+                href="tel:+441617925446"
+                class="d-flex align-items-center text-decoration-none text-white"
+                style="font-size: 22px"
+              >
+                <img src="images/telephone.png" style="height: 25px;
+                margin-right: 8px" /> 01617925446
+              </a>
+
+              <!-- Landline -->
+              <a
+                href="tel:+447843277711"
+                class="d-flex align-items-center text-decoration-none text-white"
+                style="font-size: 22px"
+              >
+                <i
+                  class="ri-phone-line fs-4 me-2"
+                  style="margin-right: 4px"
+                ></i>
+                07843277711
+              </a>
+            </div>
+            <a href="https://gtecplumbing.co.uk/" class="bkVisit text-center"
+              >Click Here To Visit Our Main Website</a
+            >
+          </div>
+          <div class="row">
+            <header class="topHEad">
+              <div
+                class="container d-flex justify-content-between align-items-center"
+              >
+                <a href="" class="logAnch"
+                  ><img src="images/logo (2).png" alt="G-TEC Logo" class="h-14"
+                /></a>
+                <div class="topHEad_txxt">
+                  <p>Central Heating <span>Manchester</span></p>
+                </div>
+
+                <div class="safe_divvv d-flex align-items-center">
+                  <div class="gasSafeDV">
+                    <img src="images/gassafe.png" alt="Gas Safe" />
+                  </div>
+                  <div class="whatsSafeDV">
+                    <img
+                      src="images/WhatsApp Image 2025-02-22 at 15.35.17_0167e07f.jpg"
+                      alt="WhatsApp"
+                    />
+                  </div>
+
+                  <!--<button class="navbar-toggler d-lg-none" type="button">-->
+                  <!--    <span class="navbar-toggler-icon"></span>-->
+                  <!--</button>-->
+                </div>
+              </div>
+            </header>
+
+            <!-- <div style="background-color: #EC6425 ; width:130px; height: 2px; margin-top: -30px;"></div> -->
+          </div>
+          <div class="bannRow_1 col-lg-5">
+            <h1>G-Tec – Keeping Manchester Warm, One Pipe At A Time!</h1>
+            <ul class="mt-3">
+              <li>
+                <span class="list-icon"
+                  ><i class="fa-solid fa-chevron-right"></i></span
+                >&nbsp; Rapid Repairs & Maintenance
+              </li>
+              <li>
+                <span class="list-icon"
+                  ><i class="fa-solid fa-chevron-right"></i></span
+                >&nbsp; Expert Installations
+              </li>
+              <li>
+                <span class="list-icon"
+                  ><i class="fa-solid fa-chevron-right"></i></span
+                >&nbsp; Energy-Efficient Solutions
+              </li>
+            </ul>
+            <a class="numBTn" href="tel:+447843277711"
+              ><i class="fa-solid fa-phone"></i>&nbsp; 07843277711</a
+            >
+          </div>
+
+          <div class="col-lg-4 bannRow_2" style="margin-bottom: 10px">
+            <div class="formDivv bg-light rounded shadow">
+              <div class="frmHead">
+                <h2 class="">
+                  Schedule Your <span class="">Appointment</span>
+                </h2>
+              </div>
+              <form
+                id="serviceForm"
+                class="p-4"
+                onsubmit="return validateForm(event)"
+              >
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control mb-2"
+                  placeholder="Enter Your Name"
+                />
+                <small id="nameError" class="text-danger"></small>
+
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control mb-2"
+                  placeholder="Enter Your Email"
+                />
+                <small id="emailError" class="text-danger"></small>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-control mb-2"
+                  placeholder="Enter Your Phone Number"
+                />
+                <small id="phoneError" class="text-danger"></small>
+
+                <select id="service" class="form-select mb-2">
+                  <option value="">Select Your Service</option>
+                  <option>Plumbing Repair</option>
+                  <option>Heating System Installation</option>
+                  <option>Maintenance Check</option>
+                </select>
+                <small id="serviceError" class="text-danger"></small>
+
+                <button type="submit" class="btn btn-primary">
+                  Submit Now
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="manPiccc">
+            <img src="images/Bhadrolok.png" class="" alt="Technician" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands  -->
+
+    <section class="brandSec py-4">
+      <div class="container">
+        <div class="bkHead bkHead_1 text-center">
+          <h2 class="fw-bold">Brands We Work</h2>
+          <p class="">
+            At G-Tec, we partner with leading brands in plumbing and heating,
+            ensuring our customers receive top-quality products and services.
+            Trust us to deliver reliable solutions from industry-recognized
+            manufacturers for your home.
+          </p>
+        </div>
+
+        <div class="brndsIMG"><img src="images/brndssss.png" alt="" /></div>
+      </div>
+    </section>
+    <!--BRANDS SECTION -->
+
+    <!-- HOW  TO BOOK US --->
+
+    <section class="BoookSec pt-4 text-center">
+      <div class="container-fluid">
+        <div class="bkHead">
+          <h2 class="fw-bold">How To Book Us?</h2>
+          <p class="">Book your appointment through these simple steps</p>
+        </div>
+
+        <div class="bookRoww row">
+          <div class="bkColl col-md-4 position-relative">
+            <div
+              class="bkIconnn position-absolute rounded-circle mx-auto d-flex align-items-center justify-content-center"
+              style="width: 120px; height: 120px"
+            >
+              <img src="images/content.png" class="w-50" alt="Form Icon" />
+            </div>
+            <h4 class="mt-2">Fill Up The Form</h4>
+          </div>
+          <div class="bkColl col-md-4 position-relative">
+            <div
+              class="bkIconnn position-absolute rounded-circle mx-auto d-flex align-items-center justify-content-center"
+              style="width: 120px; height: 120px"
+            >
+              <img
+                src="images/SIMPLE FORM.png"
+                class="w-50"
+                alt="Checklist Icon"
+              />
+            </div>
+            <h4 class="mt-2">Select your Service</h4>
+          </div>
+          <div class="bkColl col-md-4 position-relative">
+            <div
+              class="bkIconnn position-absolute rounded-circle mx-auto d-flex align-items-center justify-content-center"
+              style="width: 120px; height: 120px"
+            >
+              <img src="images/CALL BACK.png" class="w-50" alt="Phone Icon" />
+            </div>
+            <h4 class="mt-2">Our Experts Will Call You</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************** 4th Sec  -->
+
+    <section class="expSec pb-5">
+    <div class="container">
+      <div class="bkHead bkHead_1 text-center">
+
+        <h2 class="fw-bold">Expert Plumbing Solutions</h2>
+        <p class="">Reliable & Fast Service - 24/7 Emergency Repairs</p>
+      </div>
+
+
+      <div class="expRoww row mt-5 mb-3">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="expCardd">
+            <div class="expImgg"><img src="images/cental.jpg" alt=""></div>
+            <h5>Central heating</h5>
+            <p>Reliable central heating services in Manchester for efficient installations, repairs, and maintenance to ensure warmth. </p>
+          <a href="#forQuotebann"  style="text-decoration: none;"><button>Book Now</button></a>  
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="expCardd">
+            <div class="expImgg"><img src="images/power1.jfif" alt=""></div>
+            <h5>Power Flushing</h5>
+            <p>Power flushing services to clean heating systems, improving efficiency and extending the lifespan of radiators</p>
+          <a href="#forQuotebann"  style="text-decoration: none;"><button>Book Now</button></a>  
+          </div>
+        </div>
+
+      
+
+        <div class="col-lg-3 col-md-6">
+          <div class="expCardd">
+            <div class="expImgg"><img src="images/floorheat2.jpg" alt=""></div>
+            <h5>Underfloor Heating</h5>
+            <p>Underfloor heating installation and maintenance for efficient, comfortable warmth throughout your home </p>
+          <a href="#forQuotebann"  style="text-decoration: none;"><button>Book Now</button></a>  
+          </div>
+        </div>
+
+          <div class="col-lg-3 col-md-6">
+          <div class="expCardd">
+            <div class="expImgg"><img src="images/renewableimage3-min.jpg" alt=""></div>
+            <h5>Renewable Energy</h5>
+            <p>Renewable energy solutions for sustainable heating, reducing carbon footprint and energy costs for homes</p>
+          <a href="#forQuotebann"  style="text-decoration: none;"><button>Book Now</button></a>  
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </section>
+    <!-- 5th sec  -->
+
+    <section class="chosSec position-relative">
+      <div class="container-fluid">
+        <div class="chosHead">
+          <h2>Why Choose Us ?</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 chosRow_1">
+            <h4>G-Tec - Manchester's</h4>
+            <h2>Trusted Plumbing & Heating Experts</h2>
+
+            <p>
+              At G-Tec, we provide top-tier plumbing and heating services across
+              Manchester, ensuring your home stays warm, efficient, and safe all
+              year round. Our experienced professionals are committed to
+              delivering high-quality solutions, from emergency repairs to
+              expert installations.
+            </p>
+
+            <p>
+              We prioritize customer satisfaction with reliable, cost- effective
+              services tailored to your needs. Using only the best materials and
+              the latest technology, we guarantee long-lasting results. Whether
+              you need routine maintenance, urgent repairs, or a full heating
+              system installation, G-Tec is your go-to choice for expertise,
+              transparency, and exceptional service.
+            </p>
+            <p>Trust G-Tec — Keeping Your Home Comfortable and Secure.</p>
+
+            <div class="chosBtn_dv">
+              <button onclick="window.location.href='tel:+441617925446';">
+                0161 792 5446
+              </button>
+              <button onclick="window.location.href='#forQuotebann';">
+                GET A FREE QUOTATION
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="chosIMGG">
+              <img src="images/chosIMGGG.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--******** Footer ************-->
+
+    <footer style="background-color: rgb(212, 212, 212)">
+      <section class="foot_sec">
+        <div class="lasttt">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="" class="logAnch_lsst"
+                  ><img src="images/logo (2).png" alt="G-TEC Logo"
+                /></a>
+              </div>
+
+              <div class="sscc col-md-6">
+                <p>
+                  GTEC Plumbers are available in Manchester City Centre. We also
+                  cover Prestwich Plumbing, Whitefield Plumbing, Broughton Park
+                  Plumbing & Crumpsall Plumbing needs
+                </p>
+                <div
+                  class="lastt_socc"
+                  style="display: flex; justify-content: end"
+                >
+                  <a href="https://x.com/gtec38"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="https://www.facebook.com/GtecGasSevices"
+                    ><i class="ri-facebook-box-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footLAst py-2">
+        <div
+          class="container d-flex justify-content-center align-items-center gap-4"
+        >
+          <p>
+            &copy; 2025 All Rights Reserved
+            <a href="https://kyletest.in/gtec-landing/">G-Tec</a>
+          </p>
+          <p>
+            Designed & Developed by
+            <a href="https://kyleinfotech.co.in/">Kyle Infotech</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="sss"><img style="width: 100%;" src="images/justttt.png" alt=""></div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function validateForm(event) {
+        let isValid = true;
+
+        // Clear previous error messages
+        document.getElementById("nameError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("phoneError").innerText = "";
+        document.getElementById("serviceError").innerText = "";
+
+        // Name validation
+        let name = document.getElementById("name").value.trim();
+        if (name === "") {
+          document.getElementById("nameError").innerText = "Name is required.";
+          isValid = false;
+        }
+
+        // Email validation
+        let email = document.getElementById("email").value.trim();
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (email === "") {
+          document.getElementById("emailError").innerText =
+            "Email is required.";
+          isValid = false;
+        } else if (!emailPattern.test(email)) {
+          document.getElementById("emailError").innerText =
+            "Enter a valid email.";
+          isValid = false;
+        }
+
+        // Phone validation
+        let phone = document.getElementById("phone").value.trim();
+        let phonePattern = /^[0-9]{10}$/;
+        if (phone === "") {
+          document.getElementById("phoneError").innerText =
+            "Phone number is required.";
+          isValid = false;
+        } else if (!phonePattern.test(phone)) {
+          document.getElementById("phoneError").innerText =
+            "Enter a valid 10-digit phone number.";
+          isValid = false;
+        }
+
+        // Service validation
+        let service = document.getElementById("service").value;
+        if (service === "") {
+          document.getElementById("serviceError").innerText =
+            "Please select a service.";
+          isValid = false;
+        }
+
+        if (!isValid) {
+          event.preventDefault();
+        }
+        return isValid;
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- <div class="sss"><img style="width: 100%;" src="images/justttt.png" alt=""></div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplayTimeout: 3000,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      function validateForm(event) {
+        let isValid = true;
+
+        // Clear previous error messages
+        document.getElementById("nameError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("phoneError").innerText = "";
+        document.getElementById("serviceError").innerText = "";
+
+        // Name validation
+        let name = document.getElementById("name").value.trim();
+        if (name === "") {
+          document.getElementById("nameError").innerText = "Name is required.";
+          isValid = false;
+        }
+
+        // Email validation
+        let email = document.getElementById("email").value.trim();
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (email === "") {
+          document.getElementById("emailError").innerText =
+            "Email is required.";
+          isValid = false;
+        } else if (!emailPattern.test(email)) {
+          document.getElementById("emailError").innerText =
+            "Enter a valid email.";
+          isValid = false;
+        }
+
+        // Phone validation
+        let phone = document.getElementById("phone").value.trim();
+        let phonePattern = /^[0-9]{10}$/;
+        if (phone === "") {
+          document.getElementById("phoneError").innerText =
+            "Phone number is required.";
+          isValid = false;
+        } else if (!phonePattern.test(phone)) {
+          document.getElementById("phoneError").innerText =
+            "Enter a valid 10-digit phone number.";
+          isValid = false;
+        }
+
+        // Service validation
+        let service = document.getElementById("service").value;
+        if (service === "") {
+          document.getElementById("serviceError").innerText =
+            "Please select a service.";
+          isValid = false;
+        }
+
+        if (!isValid) {
+          event.preventDefault();
+        }
+        return isValid;
+      }
+    </script>
+  </body>
+</html>

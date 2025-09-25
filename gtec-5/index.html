@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Tec Section</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- owl min css -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- owl theme default -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <link rel="stylesheet" href="./assets/responsive.css" />
+
+
+    <style>
+      .border-orange {
+        border: 2px solid #ec6425;
+      }
+
+      .shadow-orange {
+        box-shadow: 0 10px 20px rgba(236, 100, 37, 0.25);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+      }
+
+      .shadow-orange:hover {
+        box-shadow: 0 12px 28px rgba(236, 100, 37, 0.4);
+        transform: translateY(-6px);
+      }
+
+      .step-number {
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+        background: #ec6425;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 50%;
+        padding: 10px 14px;
+        font-size: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .step-icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .step-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .bg-orange {
+        background-color: #ec6425 !important;
+      }
+      .btn-orange {
+        background-color: #ec6425;
+        color: #fff;
+        padding: 0.5rem 1.2rem;
+        border: none;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        display: inline-block;
+        text-decoration: none;
+      }
+      .btn-orange:hover {
+        background-color: #d8561f;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(236, 100, 37, 0.3);
+      }
+      .expCard {
+        background-color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .expCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      }
+      .expImageWrapper img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .bg-orange {
+        background-color: #ec6425 !important;
+      }
+
+      .text-orange {
+        color: #ec6425 !important;
+      }
+
+      .btn-orange {
+        background-color: #ec6425;
+        color: white;
+        transition: all 0.3s ease;
+      }
+
+      .btn-orange:hover {
+        background-color: #c9541f;
+        transform: scale(1.03);
+      }
+
+      .hover-scale {
+        transition: transform 0.3s ease;
+      }
+
+      .hover-scale:hover {
+        transform: translateY(-10px) scale(1.02);
+      }
+
+      .rounded-top-5 {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+      }
+      /**visit main website**/
+
+      .bkVisit {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+
+      .custom-shape {
+        background-color: #ec6425;
+        color: white;
+        font-weight: 600;
+        padding: 16px 40px;
+        border-radius: 30px 50px 30px 50px; /* Uniquely rounded corners */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .custom-shape:hover {
+        background-color: #c9541f;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
+
+      .custom-shape:focus {
+        outline: none;
+      }
+
+      /* card shape**/
+
+      .bg-gradient {
+        background: linear-gradient(to right, #ec6425, #fdbb2d);
+      }
+
+      .custom-card {
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        border-radius: 12px; /* Custom rounded corners */
+        transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+      }
+
+      .custom-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      }
+
+      .custom-card-img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        object-fit: cover;
+      }
+
+      .custom-card-title i {
+        margin-right: 10px;
+      }
+
+      .custom-card-title {
+        font-size: 18px;
+        margin-left: -10px;
+        color: white;
+      }
+
+      .btn-light {
+        background-color: white;
+        color: #ec6425;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid #ec6425;
+      }
+
+      .btn-light:hover {
+        background-color: #ec6425;
+        color: white;
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .text-white-50 {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      /* Floating effect on hover */
+      .custom-card:hover .card-img-top {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+
+      /* Custom shape for the body */
+      .custom-card:hover .card-body {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+      }
+
+      /* Section Background */
+      .bann_sec {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("https://images.unsplash.com/photo-1553265381-674034b34554?q=80&w=1580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+            no-repeat center center;
+        background-size: cover;
+        color: black;
+      }
+
+      /* Adjusting Headings */
+      .bann_sec h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .bann_sec h5 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+      }
+
+      /* Button Style */
+      .bann_sec .btn-warning {
+        background-color: #ff7a00;
+        border: none;
+      }
+
+      .bann_sec .btn-warning:hover {
+        background-color: #e86e00;
+      }
+
+      /* Dimmed Overlay Text */
+      .imgDimOut {
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 1rem;
+      }
+
+      /* Form Styling */
+      .formDivv {
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      .formDivv input,
+      .formDivv select {
+        font-size: 1rem;
+      }
+
+      .formDivv button {
+        background-color: #ff7a00;
+        color: white;
+        font-size: 1.1rem;
+      }
+
+      .formDivv button:hover {
+        background-color: #e86e00;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 991px) {
+        .bann_sec h1 {
+          font-size: 2rem;
+        }
+
+        .bann_sec .btn-lg {
+          width: 100%;
+        }
+      }
+
+      /**** form***/
+      .formboxmain {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+      }
+      .appointment-box {
+        background-color: white;
+        border: 1px solid #ff7a00;
+        overflow: hidden;
+        width: 85%;
+      }
+
+      .appointment-header {
+        background-color: #ef5b1f;
+      }
+
+      .text-yellow {
+        color: #ffd700;
+      }
+
+      .btn-orange {
+        background-color: #ef5b1f;
+        color: white;
+        border: none;
+        transition: background-color 0.3s ease;
+        border-radius: 10px;
+      }
+
+      .btn-orange:hover {
+        background-color: #d94e10;
+      }
+
+      input.form-control,
+      select.form-select {
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 0.75rem 1rem;
+      }
+
+      @media (max-width: 767px) {
+        .appointment-box form .col-md-4,
+        .appointment-box form .col-md-6,
+        .appointment-box form .col-md-2 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .appointment-box form .d-grid {
+          margin-top: 1rem;
+        }
+      }
+
+      /** btnhover **/
+      .btnhover {
+        background-color: #c9541f;
+        color: white;
+      }
+      .btnhover:hover {
+        background: transparent;
+        border: 1px solid #c9541f;
+        color: white;
+      }
+
+      /***brands***/
+
+      .itemImgCom {
+        background-color: #ffffff;
+        border-radius: 1rem;
+        padding: 2rem;
+        height: 180px; /* Fixed height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+
+      .itemImgCom:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .itemImgCom img {
+        max-height: 80px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+
+      .itemImgCom:hover img {
+        transform: scale(1.08);
+      }
+
+      .owl-carousel .item {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .compLO .owl-dot {
+        width: 12px;
+        height: 12px;
+        background: #bbb;
+        display: inline-block;
+        margin: 0 5px;
+        border-radius: 50%;
+        transition: background 0.3s;
+      }
+
+      .compLO .owl-dot.active {
+        background: #ff5722;
+      }
+
+      /**footer***/
+
+      footer {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #121212;
+        color: #f1f1f1;
+      }
+
+      .foot_sec {
+        padding: 60px 0;
+        border-bottom: 1px solid #333;
+      }
+
+      .footer-description {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: #ccc;
+        max-width: 500px;
+      }
+
+      .lastt_socc a {
+        font-size: 1.6rem;
+        transition: transform 0.3s, color 0.3s;
+      }
+
+      .lastt_socc a:hover {
+        transform: scale(1.2);
+        color: #ff5722 !important;
+      }
+
+      .footer-logo {
+        width: 100%;
+        max-width: 320px; /* At least 300px width, max 320px */
+        min-width: 300px;
+        height: auto;
+        object-fit: contain;
+        background: transparent;
+        border-radius: 0;
+        padding: 0;
+        display: block;
+      }
+
+      .footer-logo:hover {
+        transform: scale(1.05);
+      }
+
+      .footLAst {
+        background-color: #1e1e1e;
+        color: #aaa;
+        font-size: 0.9rem;
+      }
+
+      .lastt_socc a {
+        text-decoration: none !important;
+        color: #ff5722;
+        font-size: 1.6rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .lastt_socc a i {
+        text-decoration: none !important;
+      }
+
+      @media (max-width: 768px) {
+        .footer-description {
+          text-align: center;
+        }
+
+        .footer-logo {
+          margin-top: 20px;
+        }
+
+        .footLAst {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <header class="top-header">
+      <div class="container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <img src="images/logo (2).png" alt="G-TEC Logo" />
+        </a>
+
+        <!-- Tagline -->
+        <div class="tagline">
+          <p>Commercial Plumbing and <span>Heating in Manchester</span></p>
+        </div>
+
+        <!-- Phone Number -->
+        <!-- <div class="phone">
+      <i class="fa-solid fa-phone"></i>
+      <a href="tel:01617925446">0161 792 5446</a>
+    </div> -->
+
+        <!-- Badges -->
+        <div class="badges">
+          <img src="images/gassafe.png" alt="Gas Safe" />
+          <img
+            src="images/WhatsApp Image 2025-02-22 at 15.35.17_0167e07f.png"
+            alt="WhatsApp"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- 2nd Sec  -->
+    <section class="bann_sec" id="forQuotebann">
+      <div class="container">
+        <div class="row align-items-center justify-content-between py-5">
+          <div class="col-lg-6 text-white">
+            <h5 class="text-uppercase font-weight-bold">24/7 Expert Care</h5>
+            <h1 class="display-4 font-weight-bold">
+              G-Tec – Keeping Manchester Warm, One Pipe At A Time!
+            </h1>
+            <p class="lead" style="color: orange; font-weight: 400">
+              Professional plumbing and heating services you can rely on. Our
+              experts provide quality, affordable services to keep your home
+              comfortable.
+            </p>
+            <a href="#" class="btn btnhover btn-lg mt-4">Book Now</a>
+          </div>
+
+          <!----form-->
+          <div
+            class="col-lg-4 rounded shadow p-4"
+            style="
+              background: rgba(0, 0, 0, 0.1);
+              backdrop-filter: blur(10px);
+              -webkit-backdrop-filter: blur(10px) animated-border-box;
+            "
+          >
+            <h2 class="h5 mb-3 text-white fw-bold">Book Your Appointment</h2>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control bg-#c9541f text-black border-#c9541f"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control bg-#c9541f text-black border-#c9541f"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control bg-#c9541f text-black border-#c9541f"
+                  placeholder="Your Phone"
+                />
+              </div>
+              <div class="mb-3">
+                <select
+                  class="form-select bg-#c9541f text-black border-#c9541f"
+                >
+                  <option selected>Plumbing Repair</option>
+                  <option value="heating">Heating Service</option>
+                  <option value="installation">New Installation</option>
+                  <option value="emergency">Emergency Service</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btnhover w-100">
+                Submit Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="calltoaction">
+      <!-- Left Side -->
+      <div class="visit-btn">
+        <a href="#" class="bkVisit"> Click Here To Visit Our Main Website </a>
+      </div>
+
+      <!-- Right Side -->
+      <div class="callbtns">
+        <a href="tel:+447843277711" class="numBTn">
+          <i class="fa-solid fa-phone"></i> 07843 277711
+        </a>
+        <a href="tel:+441617925446" class="numBTn">
+          <img src="images/telephone.png" style="width: 25px" /> 0161 792 5446
+        </a>
+      </div>
+    </div>
+
+   
+    <!-- Brands  -->
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center py-5">
+          <h2 class="fw-bold display-5" style="color: #343a40">
+            Our Trusted Partners
+          </h2>
+          <p class="lead text-secondary">
+            We collaborate with industry-leading brands to bring you the best in
+            plumbing and heating solutions.
+          </p>
+          <hr class="my-4" style="border-top: 2px solid #d8561f" />
+        </div>
+
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 align-items-stretch justify-content-center"
+        >
+          <div class="col">
+            <div
+              class="p-3 bg-white shadow-sm rounded-3 d-flex align-items-center justify-content-center"
+              style="height: 120px"
+            >
+              <img
+                src="images/gtCom_1.png"
+                alt="Samsung"
+                class="img-fluid"
+                style="max-height: 80px; max-width: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-3 bg-white shadow-sm rounded-3 d-flex align-items-center justify-content-center"
+              style="height: 120px"
+            >
+              <img
+                src="images/gtCom_2.png"
+                alt="Viessmann"
+                class="img-fluid"
+                style="max-height: 80px; max-width: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-3 bg-white shadow-sm rounded-3 d-flex align-items-center justify-content-center"
+              style="height: 120px"
+            >
+              <img
+                src="images/gtCom_3.png"
+                alt="Vaillant"
+                class="img-fluid"
+                style="max-height: 80px; max-width: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-3 bg-white shadow-sm rounded-3 d-flex align-items-center justify-content-center"
+              style="height: 120px"
+            >
+              <img
+                src="images/gtCom_4.png"
+                alt="Worcester Bosch"
+                class="img-fluid"
+                style="max-height: 80px; max-width: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-3 bg-white shadow-sm rounded-3 d-flex align-items-center justify-content-center"
+              style="height: 120px"
+            >
+              <img
+                src="images/gtCom_5.png"
+                alt="Honeywell"
+                class="img-fluid"
+                style="max-height: 80px; max-width: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="BoookSec py-5 text-center bg-light">
+      <div class="container">
+        <div class="bkHead mb-5">
+          <h2 class="fw-bold display-5">
+            How To <span style="color: #ec6425">Book Us</span>?
+          </h2>
+          <p class="text-muted fs-5">
+            Book your appointment through these simple steps
+          </p>
+        </div>
+
+        <div class="text-center bg-light">
+          <div class="container">
+            <div class="row g-5 justify-content-center">
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="step-card position-relative p-4 rounded-4 h-100 shadow-orange"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1554135392-28d77d7e8202?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHx3YXRlcnxlbnwwfHwwfHx8MA%3D%3D);
+                    background-size: cover;
+                    background-position: center;
+                    color: black; /* Adjust text color for better visibility */
+                  "
+                >
+                  <div
+                    class="step-icon mb-3 mx-auto position-relative"
+                    style="border: 2px solid #ec6425"
+                  >
+                    <img
+                      src="images/bookGtec_1.jpg"
+                      alt="Step 1"
+                      class="rounded-circle shadow"
+                      style="opacity: 0.8"
+                    />
+                    <span
+                      class="step-number"
+                      style="
+                        background-color: #ec6425;
+                        color: black;
+                        border-color: #ec6425;
+                      "
+                      >1</span
+                    >
+                  </div>
+                  <h5 class="fw-bold">Fill Up The Form</h5>
+                  <p style="color: black; font-weight: 600">
+                    Provide your details through our easy-to-use online form.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="step-card position-relative p-4 rounded-4 h-100 shadow-orange"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1554135392-28d77d7e8202?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHx3YXRlcnxlbnwwfHwwfHx8MA%3D%3D);
+                    background-size: cover;
+                    background-position: center;
+                    color: black; /* Adjust text color for better visibility */
+                  "
+                >
+                  <div
+                    class="step-icon mb-3 mx-auto position-relative"
+                    style="border: 2px solid #ec6425"
+                  >
+                    <img
+                      src="images/bookGtec_2.jpg"
+                      alt="Step 2"
+                      class="rounded-circle shadow"
+                      style="opacity: 0.8"
+                    />
+                    <span
+                      class="step-number"
+                      style="
+                        background-color: #ec6425;
+                        color: white;
+                        border-color: #ec6425;
+                      "
+                      >2</span
+                    >
+                  </div>
+                  <h5 class="fw-bold">Select Your Service</h5>
+                  <p style="color: black; font-weight: 600">
+                    Choose the service that suits your needs from our offerings.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="step-card position-relative p-4 rounded-4 h-100 shadow-orange"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1554135392-28d77d7e8202?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHx3YXRlcnxlbnwwfHwwfHx8MA%3D%3D);
+                    background-size: cover;
+                    background-position: center;
+                    color: black; /* Adjust text color for better visibility */
+                  "
+                >
+                  <div
+                    class="step-icon mb-3 mx-auto position-relative"
+                    style="border: 2px solid #ec6425"
+                  >
+                    <img
+                      src="images/bookGtec_3.jpg"
+                      alt="Step 3"
+                      class="rounded-circle shadow"
+                      style="opacity: 0.8"
+                    />
+                    <span
+                      class="step-number"
+                      style="
+                        background-color: #ec6425;
+                        color: white;
+                        border-color: #ec6425;
+                      "
+                      >3</span
+                    >
+                  </div>
+                  <h5 class="fw-bold">Our Experts Will Call You</h5>
+                  <p style="color: black; font-weight: 600">
+                    Relax while our team reaches out to confirm your
+                    appointment.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************** 4th Sec  -->
+    <section
+      class="expSec pb-5 text-white"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url('https://images.unsplash.com/photo-1661044437616-71100c9f638e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+            no-repeat center center / cover;
+      "
+    >
+      <div class="container">
+        <div class="bkHead bkHead_1 text-center my-5">
+          <h2 class="fw-bold text-white display-5">
+            <span style="color: #ec6425">Expert Plumbing</span> Solutions
+          </h2>
+          <p class="fs-5 text-white">
+            Reliable & Fast Service - 24/7 Emergency Repairs
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card Example -->
+          <div class="col-lg-3 col-md-6">
+            <div
+              class="expCard card border-0 rounded-3 shadow-lg h-100 overflow-hidden position-relative bg-gradient custom-card"
+            >
+              <div class="position-relative">
+                <img
+                  src="images/bath5.jpg"
+                  class="card-img-top rounded-top-3 custom-card-img"
+                  alt="Commercial Plumbing"
+                />
+              </div>
+              <div
+                class="card-body p-4 d-flex flex-column justify-content-between"
+              >
+                <h5 class="fw-bold text-white mb-3 custom-card-title">
+                  <i class="bi bi-tools"></i>Bathroom
+                </h5>
+                <p class="card-text text-white small mb-4">
+                  Professional bathroom services for design, installation, and renovation to create your dream space.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-light w-100 rounded-pill fw-semibold shadow-sm hover-btn"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div
+              class="expCard card border-0 rounded-3 shadow-lg h-100 overflow-hidden position-relative bg-gradient custom-card"
+            >
+              <div class="position-relative">
+                <img
+                  src="images/gaseng.jpg"
+                  class="card-img-top rounded-top-3 custom-card-img"
+                  alt="Commercial Plumbing"
+                />
+              </div>
+              <div
+                class="card-body p-4 d-flex flex-column justify-content-between"
+              >
+                <h5 class="fw-bold text-white mb-3 custom-card-title">
+                  <i class="bi bi-tools"></i> Gas Engineers
+                </h5>
+                <p class="card-text text-white small mb-4">
+                  Gas engineers providing safe installations, maintenance, and repairs for residential and commercial properties.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-light w-100 rounded-pill fw-semibold shadow-sm hover-btn"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div
+              class="expCard card border-0 rounded-3 shadow-lg h-100 overflow-hidden position-relative bg-gradient custom-card"
+            >
+              <div class="position-relative">
+                <img
+                  src="images/hot3.jpg"
+                  class="card-img-top rounded-top-3 custom-card-img"
+                  alt="Commercial Plumbing"
+                />
+              </div>
+              <div
+                class="card-body p-4 d-flex flex-column justify-content-between"
+              >
+                <h5 class="fw-bold text-white mb-3 custom-card-title">
+                  <i class="bi bi-tools"></i> Unvented Hot Water
+                </h5>
+                <p class="card-text text-white small mb-4">
+                  Specialized unvented hot water services for efficient installation, maintenance, and repairs in your home
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-light w-100 rounded-pill fw-semibold shadow-sm hover-btn"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div
+              class="expCard card border-0 rounded-3 shadow-lg h-100 overflow-hidden position-relative bg-gradient custom-card"
+            >
+              <div class="position-relative">
+                <img
+                  src="images/floorheat2.jpg"
+                  class="card-img-top rounded-top-3 custom-card-img"
+                  alt="Commercial Plumbing"
+                />
+              </div>
+              <div
+                class="card-body p-4 d-flex flex-column justify-content-between"
+              >
+                <h5 class="fw-bold text-white mb-3 custom-card-title">
+                  <i class="bi bi-tools"></i> Underfloor Heating
+                </h5>
+                <p class="card-text text-white small mb-4">
+                 Underfloor heating installation and maintenance for efficient, comfortable warmth throughout your home.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-light w-100 rounded-pill fw-semibold shadow-sm hover-btn"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5th sec  -->
+
+    <section class="py-5 why-gtec">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-6 d-flex justify-content-center">
+            <div
+              class="rounded overflow-hidden shadow-lg"
+              style="max-height: 550px"
+            >
+              <img
+                src="images/heatingrepair.png"
+                alt="Why Choose G-Tec"
+                class=""
+                style="
+                  object-fit: cover;
+                  border-radius: 10px;
+                  height: 500px;
+                  width: 500px;
+                "
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-3" style="color: #d8561f">
+              Why <span style="color: black">Choose Us</span>?
+            </h2>
+            <h5 class="mb-4 text-secondary">
+              Manchester’s Trusted Plumbing & Heating Experts
+            </h5>
+            <p class="mb-3 text-muted">
+              At G-Tec, we’re committed to providing expert plumbing and heating
+              services that keep your home comfortable, safe, and efficient.
+              Whether it’s urgent repairs or a full system installation, we’ve
+              got you covered.
+            </p>
+            <p class="text-muted">
+              We believe in honest service, lasting results, and transparent
+              pricing — all backed by certified technicians and the latest tools
+              in the industry.
+            </p>
+
+            <ul class="list-unstyled mt-4">
+              <li class="d-flex align-items-start mb-3">
+                <img
+                  src="images/plubChsTyp_1.png"
+                  alt="Expert Technicians"
+                  style="width: 40px"
+                  class="me-3"
+                />
+                <div>
+                  <strong>Expert Technicians</strong><br /><small
+                    class="text-muted"
+                    >Certified professionals ready for any job.</small
+                  >
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <img
+                  src="images/plubChsTyp_2.png"
+                  alt="Quick Response"
+                  style="width: 40px"
+                  class="me-3"
+                />
+                <div>
+                  <strong>Quick Response</strong><br /><small class="text-muted"
+                    >Emergency support, 24/7 availability.</small
+                  >
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <img
+                  src="images/plubChsTyp_3.png"
+                  alt="Transparent Pricing"
+                  style="width: 40px"
+                  class="me-3"
+                />
+                <div>
+                  <strong>Transparent Pricing</strong><br /><small
+                    class="text-muted"
+                    >No surprises, just honest quotes.</small
+                  >
+                </div>
+              </li>
+              <li class="d-flex align-items-start">
+                <img
+                  src="images/plubChsTyp_4.png"
+                  alt="Long-Term Solutions"
+                  style="width: 40px"
+                  class="me-3"
+                />
+                <div>
+                  <strong>Long-Term Solutions</strong><br /><small
+                    class="text-muted"
+                    >Durable fixes built to last.</small
+                  >
+                </div>
+              </li>
+            </ul>
+
+            <div class="mt-4">
+              <button
+                class="btn me-2"
+                onclick="window.location.href='tel:+441617925446';"
+                style="background-color: #c9541f; color: white"
+              >
+                0161 792 5446
+              </button>
+              <button
+                class="btn"
+                onclick="window.location.href='#forQuotebann';"
+                style="border: 2px solid #c9541f; color: black"
+              >
+                GET A FREE QUOTATION
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 text-center" style="background-color: #ff5722">
+      <div class="container-fluid">
+        <div class="owl-carousel owl-theme">
+          <div class="item p-3">
+            <div class="itemImgCom">
+              <img src="images/GTitem_1.png" alt="Brand 1" class="w-100" />
+            </div>
+          </div>
+          <div class="item p-3">
+            <div class="itemImgCom">
+              <img src="images/GTitem_2.png" alt="Brand 2" class="w-100" />
+            </div>
+          </div>
+          <div class="item p-3">
+            <div class="itemImgCom">
+              <img src="images/GTitem_3.png" alt="Brand 3" class="w-100" />
+            </div>
+          </div>
+          <div class="item p-3">
+            <div class="itemImgCom">
+              <img src="images/GTitem_4.png" alt="Brand 4" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--******** Footer ************-->
+    <footer>
+      <!-- Footer Section -->
+      <section class="foot_sec">
+        <div class="container">
+          <div
+            class="row align-items-center justify-content-between text-center text-md-start"
+          >
+            <!-- Left side text -->
+            <div class="col-md-6">
+              <p class="footer-description mb-3">
+                GTEC Plumbers are available in Manchester City Centre. We also
+                cover Prestwich Plumbing, Whitefield Plumbing, Broughton Park
+                Plumbing & Crumpsall Plumbing needs.
+              </p>
+              <div
+                class="lastt_socc d-flex justify-content-center justify-content-md-start gap-4"
+              >
+                <a href="https://x.com/gtec38"
+                  ><i class="fa-brands fa-x-twitter" style="color: #ff5722"></i
+                ></a>
+                <a href="https://www.facebook.com/GtecGasSevices"
+                  ><i class="ri-facebook-box-line" style="color: #ff5722"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Right side logo -->
+            <div
+              class="col-md-6 d-flex justify-content-center justify-content-md-end mt-4 mt-md-0"
+            >
+              <a href="#" class="logAnch_lsst d-block">
+                <img
+                  src="images/logo (2).png"
+                  alt="G-TEC Logo"
+                  class="footer-logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Bottom Section -->
+      <div
+        class="footLAst py-3 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+      >
+        <p class="footer-copy mb-0">
+          &copy; 2025 All Rights Reserved
+          <a href="https://kyletest.in/gtec-landing/">G-Tec</a>
+        </p>
+        <p class="footer-design mb-0">
+          Designed & Developed by
+          <a href="https://kyleinfotech.co.in/">Kyle Infotech</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- <div class="sss"><img style="width: 100%;" src="images/justttt.png" alt=""></div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      function validateForm(event) {
+        let isValid = true;
+
+        // Clear previous error messages
+        document.getElementById("nameError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("phoneError").innerText = "";
+        document.getElementById("serviceError").innerText = "";
+
+        // Name validation
+        let name = document.getElementById("name").value.trim();
+        if (name === "") {
+          document.getElementById("nameError").innerText = "Name is required.";
+          isValid = false;
+        }
+
+        // Email validation
+        let email = document.getElementById("email").value.trim();
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (email === "") {
+          document.getElementById("emailError").innerText =
+            "Email is required.";
+          isValid = false;
+        } else if (!emailPattern.test(email)) {
+          document.getElementById("emailError").innerText =
+            "Enter a valid email.";
+          isValid = false;
+        }
+
+        // Phone validation
+        let phone = document.getElementById("phone").value.trim();
+        let phonePattern = /^[0-9]{10}$/;
+        if (phone === "") {
+          document.getElementById("phoneError").innerText =
+            "Phone number is required.";
+          isValid = false;
+        } else if (!phonePattern.test(phone)) {
+          document.getElementById("phoneError").innerText =
+            "Enter a valid 10-digit phone number.";
+          isValid = false;
+        }
+
+        // Service validation
+        let service = document.getElementById("service").value;
+        if (service === "") {
+          document.getElementById("serviceError").innerText =
+            "Please select a service.";
+          isValid = false;
+        }
+
+        if (!isValid) {
+          event.preventDefault();
+        }
+        return isValid;
+      }
+    </script>
+  </body>
+</html>

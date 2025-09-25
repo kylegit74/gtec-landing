@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Tec Section</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- owl min css -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- owl theme default -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <link rel="stylesheet" href="./assets/responsive.css" />
+
+    <style></style>
+  </head>
+
+  <body class="">
+    <header class="topHEad py-2">
+      <div
+        class="container d-flex justify-content-end align-items-center position-relative gap-lg-4"
+      >
+        <a href="" class="logAnch"
+          ><img src="images/logo (2).png" alt="G-TEC Logo" class="h-14"
+        /></a>
+        <div class="topHEad_txxt">
+          <p>Manchester Heating <span>Repair</span></p>
+        </div>
+        <div class="numTop position-relative">
+          <a href="https://gtecplumbing.co.uk/"
+            >Click To Visit Our Main Website
+          </a>
+        </div>
+        <div class="safe_divvv d-flex align-items-center">
+          <div class="gasSafeDV">
+            <img src="images/gassafe.png" alt="Gas Safe" />
+          </div>
+          <div class="whatsSafeDV">
+            <img
+              src="images/WhatsApp Image 2025-02-22 at 15.35.17_0167e07f.png"
+              alt="WhatsApp"
+            />
+          </div>
+
+          <!--<button class="navbar-toggler d-lg-none" type="button">-->
+          <!--    <span class="navbar-toggler-icon"></span>-->
+          <!--</button>-->
+        </div>
+      </div>
+    </header>
+
+    <!-- 2nd Sec  -->
+
+    <section class="bann_sec position-relative" id="forQuotebann">
+      <div class="container">
+        <div class="bannRow row align-items-center justify-content-between">
+          <div class="bannRow_1 col-lg-5">
+            <h5>24/7 Expert Care</h5>
+            <h1>G-Tec – Keeping Manchester Warm, One Pipe At A Time!</h1>
+           
+            <div class="d-flex gap-2">
+              <a href="tel:+447843277711" class="numBTn mt-4"
+                ><i class="fa-solid fa-phone" id="jhj"></i> &nbsp;
+                07843277711</a
+              >
+
+              <a class="numBTn mt-4" href="tel:+441617925446">
+                <img src="images/telephone.png" style="width: 20px" />
+                01617925446
+              </a>
+            </div>
+
+            <h6>
+              <i class="ri-check-double-line"></i> <span>Experts</span>&nbsp;
+              <i class="ri-check-double-line"></i> <span>Affordable</span>&nbsp;
+              <i class="ri-check-double-line"></i>
+              <span>Top-Notch Services</span>
+            </h6>
+          </div>
+
+          <div class="col-lg-5 bannRow_2">
+            <div class="formDivv bg-light rounded shadow formmDIS_none">
+              <div class="frmHead">
+                <h2 class="">
+                  Schedule Your <span class="">Appointment</span>
+                </h2>
+              </div>
+              <form
+                id="serviceForm"
+                class="p-4"
+                onsubmit="return validateForm(event)"
+              >
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control mb-2"
+                  placeholder="Enter Your Name"
+                />
+                <small id="nameError" class="text-danger"></small>
+
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control mb-2"
+                  placeholder="Enter Your Email"
+                />
+                <small id="emailError" class="text-danger"></small>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-control mb-2"
+                  placeholder="Enter Your Phone Number"
+                />
+                <small id="phoneError" class="text-danger"></small>
+
+                <select id="service" class="form-select mb-2">
+                  <option value="">Select Your Service</option>
+                  <option>Plumbing Repair</option>
+                  <option>Heating System Installation</option>
+                  <option>Maintenance Check</option>
+                </select>
+                <small id="serviceError" class="text-danger"></small>
+
+                <button type="submit" class="btn btn-primary">
+                  Submit Now
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="absPicsBann">
+            <div class="curvArrr position-absolute">
+              <img src="images/curvvArrGtec.png" class="w-100" alt="" />
+            </div>
+
+            <div class="imgDimOut position-absolute">
+              <div class="imgDim">
+                <i class="ri-time-fill"></i>
+                <p class="typing-container">We'll Be There In An Hour</p>
+              </div>
+            </div>
+
+            <div class="manPiccc">
+              <img src="images/plumbMobBan.png" class="" alt="Technician" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="frmSec position-relative">
+      <div class="container">
+        <div class="formDivv rounded shadow position-absolute w-100">
+          <div class="frmHead">
+            <h2 class="">Schedule Your <span class="">Appointment</span></h2>
+          </div>
+          <form
+            id="serviceForm"
+            class="p-4 row"
+            onsubmit="return validateForm(event)"
+          >
+            <div class="col-lg-4 mb-4">
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Enter Your Name"
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter Your Email"
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <input
+                type="tel"
+                id="phone"
+                class="form-control"
+                placeholder="Enter Your Phone Number"
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <input
+                id="address"
+                class="form-control"
+                placeholder="Enter Your Address"
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <select id="service" class="form-select">
+                <option value="">Select Your Service</option>
+                <option>Plumbing Repair</option>
+                <option>Heating System Installation</option>
+                <option>Maintenance Check</option>
+              </select>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <button type="submit" class="btn">Submit Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="BoookSec pt-4 text-center">
+      <div class="container">
+        <div class="bkHead">
+          <h2 class="fw-bold">How To <span>Book Us</span>?</h2>
+          <p class="">Book your appointment through these simple steps</p>
+        </div>
+
+        <div class="bookRoww pt-2 position-relative row">
+          <div class="bkColl col-lg-4 position-relative">
+            <div
+              class="bkIconnn mx-auto d-flex align-items-center justify-content-center position-relative"
+              style="width: 220px; height: 220px"
+            >
+              <img src="images/bookGtec_1.jpg" class="w-100" alt="Form Icon" />
+              <span>1</span>
+            </div>
+            <h4 class="mt-2">Fill Up The Form</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur asste amet dolor</p>
+            <div class="curvArrBk_img position-absolute">
+              <img src="images/bookCurv_arr.png" class="w-100" alt="" />
+            </div>
+          </div>
+
+          <div class="bkColl col-lg-4 position-relative">
+            <div
+              class="bkIconnn mx-auto d-flex align-items-center justify-content-center position-relative"
+              style="width: 220px; height: 220px"
+            >
+              <img src="images/bookGtec_2.jpg" class="w-100" alt="Form Icon" />
+              <span>2</span>
+            </div>
+            <h4 class="mt-2">Select your Service</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur asste amet dolor</p>
+            <div class="curvArrBk_img position-absolute">
+              <img src="images/bookCurv_arr.png" class="w-100" alt="" />
+            </div>
+          </div>
+
+          <div class="bkColl col-lg-4">
+            <div
+              class="bkIconnn mx-auto d-flex align-items-center justify-content-center position-relative"
+              style="width: 220px; height: 220px"
+            >
+              <img src="images/bookGtec_3.jpg" class="w-100" alt="Form Icon" />
+              <span>3</span>
+            </div>
+            <h4 class="mt-2">Our Experts Will Call You</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur asste amet dolor</p>
+          </div>
+
+          <!-- <div class="bkColl col-md-4 position-relative bkBfr">
+                <div class="bkIconnn position-absolute rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                    <img src="images/SIMPLE FORM.png" class="w-50" alt="Checklist Icon">
+                </div>
+                <h4 class="mt-2">Select your Service</h4>
+            </div>
+            <div class="bkColl col-md-4 position-relative bkBfr">
+                <div class="bkIconnn position-absolute rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                    <img src="images/CALL BACK.png" class="w-50" alt="Phone Icon">
+                </div>
+                <h4 class="mt-2">Our Experts Will Call You</h4>
+            </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="brandSec py-4">
+      <div class="container">
+        <div class="bkHead text-center py-5">
+          <h2 class="fw-bold">Brands We Work</h2>
+          <p class="">
+            At G-Tec, we partner with leading brands in plumbing and heating,
+            ensuring our customers receive top-quality products and services.
+            Trust us to deliver reliable solutions from industry-recognized
+            manufacturers for your home.
+          </p>
+        </div>
+
+        <div class="brndsIMG">
+          <div class="container-fluid">
+            <div class="owl-carousel owl-theme">
+              <div class="item p-2">
+                <div class="brandImg">
+                  <img src="images/gtCom_1.png" alt="" class="w-100" />
+                </div>
+              </div>
+              <div class="item p-2 pb-5">
+                <div class="brandImg">
+                  <img src="images/gtCom_2.png" alt="" class="w-100" />
+                </div>
+              </div>
+              <div class="item p-2">
+                <div class="brandImg">
+                  <img src="images/gtCom_3.png" alt="" class="w-100" />
+                </div>
+              </div>
+              <div class="item p-2">
+                <div class="brandImg">
+                  <img src="images/gtCom_4.png" alt="" class="w-100" />
+                </div>
+              </div>
+              <div class="item p-2">
+                <div class="brandImg">
+                  <img src="images/gtCom_5.png" alt="" class="w-100" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************** 4th Sec  -->
+
+    <section class="expSec pb-5">
+      <a href="https://gtecplumbing.co.uk/" class="bkVisit text-center"
+        >Click Here To Visit Our Main Website</a
+      >
+      <div class="container">
+        <div class="bkHead bkHead_1 text-center">
+          <h2 class="fw-bold"><span>Expert Plumbing </span>Solutions</h2>
+          <p class="">Reliable & Fast Service - 24/7 Emergency Repairs</p>
+        </div>
+
+        <div class="expRoww row mt-5 mb-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="expCardd">
+              <div class="expImgg">
+                <img src="images/gaseng.jpg" alt="" />
+              </div>
+
+              <div class="expTxt position-relative">
+                <h5> Gas Engineers
+</h5>
+                <p>
+                  Professional commercial gas engineers providing safe installations, maintenance, and repairs for business.
+                </p>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="expCardd">
+              <div class="expImgg">
+                <img src="images/floorheat2.jpg" alt="" />
+              </div>
+
+              <div class="expTxt position-relative">
+                <h5>Underfloor Heating</h5>
+                <p>
+                  Underfloor heating installation and maintenance for efficient.
+                </p>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-3 col-md-6">
+            <div class="expCardd">
+              <div class="expImgg">
+                <img src="images/power1.jpg" alt="" />
+              </div>
+
+              <div class="expTxt position-relative">
+                <h5>Power Flushing</h5>
+                <p>
+                 Power flushing services to clean heating systems, improving efficiency and extending the lifespan of radiators.
+                </p>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6">
+            <div class="expCardd">
+              <div class="expImgg">
+                <img src="images/renewableimage3-min.jpg" alt="" />
+              </div>
+
+              <div class="expTxt position-relative">
+                <h5>Renewable Energy</h5>
+                <p>
+                  Renewable energy solutions for sustainable heating, reducing carbon footprint and energy costs for homes
+                </p>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+
+         
+          
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- 5th sec  -->
+
+    <section class="chosSec position-relative py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 chosRow_1">
+            <div class="chosHead">
+              <h2>Why <span>Choose Us</span> ?</h2>
+            </div>
+            <h3>
+              <span>G-Tec - Manchester's</span>Trusted Plumbing & Heating
+              Experts
+            </h3>
+
+            <p>
+              G-Tec delivers expert plumbing and heating services across
+              Manchester, ensuring your home stays warm, safe, and efficient.
+              From emergency repairs to full installations, our skilled team is
+              here to help.
+            </p>
+
+            <p>
+              We focus on reliable, cost-effective solutions using quality
+              materials and modern tools. For maintenance, urgent fixes, or
+              complete system upgrades, trust G-Tec for lasting results and
+              honest service.
+            </p>
+
+            <div class="choseType_dv">
+              <div class="row">
+                <div class="chseTyp_1 col-6 mt-3">
+                  <div class="chsTyp_img">
+                    <img src="images/plubChsTyp_1.png" class="w-100" alt="" />
+                  </div>
+                  <h6>Expert Technicians</h6>
+                </div>
+
+                <div class="chseTyp_1 col-6 mt-3">
+                  <div class="chsTyp_img">
+                    <img src="images/plubChsTyp_2.png" class="w-100" alt="" />
+                  </div>
+                  <h6>Quick Response</h6>
+                </div>
+
+                <div class="chseTyp_1 col-6 mt-3">
+                  <div class="chsTyp_img">
+                    <img src="images/plubChsTyp_3.png" class="w-100" alt="" />
+                  </div>
+                  <h6>Transparent Pricing</h6>
+                </div>
+
+                <div class="chseTyp_1 col-6 mt-3">
+                  <div class="chsTyp_img">
+                    <img src="images/plubChsTyp_4.png" class="w-100" alt="" />
+                  </div>
+                  <h6>Long-Term Solutions</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="chosIMGG">
+              <img src="images/heating.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chosBtn_dv">
+        <button onclick="window.location.href='tel:+441617925446';">
+          0161 792 5446
+        </button>
+        <button onclick="window.location.href='#forQuotebann';">
+          GET A FREE QUOTATION
+        </button>
+      </div>
+    </section>
+
+    <!-- Brands  -->
+
+    <section class="py-4 text-center compLO">
+      <div class="container-fluid">
+        <div class="owl-carousel owl-theme">
+          <div class="item p-3">
+            <div class="itemImgCom p-4 h-32">
+              <img
+                src="images/GTitem_1.png"
+                alt=""
+                class="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+          <div class="item p-3">
+            <div class="itemImgCom p-4 h-32">
+              <img
+                src="images/GTitem_2.png"
+                alt=""
+                class="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--******** Footer ************-->
+
+    <footer>
+      <section class="foot_sec">
+        <div class="lasttt">
+          <div class="container">
+            <div class="row flex-column align-items-center">
+              <div class="col-md-6">
+                <a href="" class="logAnch_lsst d-block"
+                  ><img src="images/logo (2).png" alt="G-TEC Logo"
+                /></a>
+              </div>
+
+              <div class="sscc col-md-6">
+                <p>
+                  GTEC Plumbers are available in Manchester City Centre. We also
+                  cover Prestwich Plumbing, Whitefield Plumbing, Broughton Park
+                  Plumbing & Crumpsall Plumbing needs
+                </p>
+                <div
+                  class="lastt_socc"
+                  style="display: flex; justify-content: center; gap: 5%"
+                >
+                  <a href="https://x.com/gtec38"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="https://www.facebook.com/GtecGasSevices"
+                    ><i class="ri-facebook-box-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footLAst py-2">
+        <div
+          class="container d-flex justify-content-center align-items-center gap-4"
+        >
+          <p>
+            &copy; 2025 All Rights Reserved
+            <a href="https://kyletest.in/gtec-landing/">G-Tec</a>
+          </p>
+          <p>
+            Designed & Developed by
+            <a href="https://kyleinfotech.co.in/">Kyle Infotech</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- <div class="sss"><img style="width: 100%;" src="images/justttt.png" alt=""></div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      function validateForm(event) {
+        let isValid = true;
+
+        // Clear previous error messages
+        document.getElementById("nameError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("phoneError").innerText = "";
+        document.getElementById("serviceError").innerText = "";
+
+        // Name validation
+        let name = document.getElementById("name").value.trim();
+        if (name === "") {
+          document.getElementById("nameError").innerText = "Name is required.";
+          isValid = false;
+        }
+
+        // Email validation
+        let email = document.getElementById("email").value.trim();
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (email === "") {
+          document.getElementById("emailError").innerText =
+            "Email is required.";
+          isValid = false;
+        } else if (!emailPattern.test(email)) {
+          document.getElementById("emailError").innerText =
+            "Enter a valid email.";
+          isValid = false;
+        }
+
+        // Phone validation
+        let phone = document.getElementById("phone").value.trim();
+        let phonePattern = /^[0-9]{10}$/;
+        if (phone === "") {
+          document.getElementById("phoneError").innerText =
+            "Phone number is required.";
+          isValid = false;
+        } else if (!phonePattern.test(phone)) {
+          document.getElementById("phoneError").innerText =
+            "Enter a valid 10-digit phone number.";
+          isValid = false;
+        }
+
+        // Service validation
+        let service = document.getElementById("service").value;
+        if (service === "") {
+          document.getElementById("serviceError").innerText =
+            "Please select a service.";
+          isValid = false;
+        }
+
+        if (!isValid) {
+          event.preventDefault();
+        }
+        return isValid;
+      }
+    </script>
+  </body>
+</html>
