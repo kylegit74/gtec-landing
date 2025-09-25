@@ -1,798 +1,677 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>G-Tec Section</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G-Tec Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./assets/responsive.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
 
-    <style>
-      /* Banner background and base text */
-      .bann_sec {
-        background: linear-gradient(135deg, #0f172a, #36507a);
-        padding: 70px 0;
-        color: #fff;
-      }
+  <link rel="stylesheet" href="./assets/responsive.css" />
 
-      .bann_sec h1 {
-        font-size: 2.7rem;
-        font-weight: 700;
-        color: #fff;
-      }
+  <style>
+    /* Banner background and base text */
+    .bann_sec {
+      background: linear-gradient(135deg, #0f172a, #36507a);
+      padding: 70px 0;
+      color: #fff;
+    }
 
-      .bann_sec p {
-        font-size: 1.1rem;
-        color: #cbd5e1;
-      }
+    .bann_sec h1 {
+      font-size: 2.7rem;
+      font-weight: 700;
+      color: #fff;
+    }
 
-      .bann_sec ul {
-        list-style: none;
-        padding: 0;
-      }
+    .bann_sec p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
 
-      .bann_sec ul li {
-        font-size: 1rem;
-        margin-bottom: 10px;
-        color: #cbd5e1;
-      }
+    .bann_sec ul {
+      list-style: none;
+      padding: 0;
+    }
 
-      .bann_sec ul li i {
-        color: #ff8146;
-        margin-right: 8px;
-      }
+    .bann_sec ul li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #cbd5e1;
+    }
 
-      /* Call button */
-      .btn-call {
-        background-color: #ff8146;
-        border: none;
-        padding: 12px 24px;
-        color: white;
-        font-weight: 600;
-        border-radius: 6px;
-        transition: 0.3s;
-      }
+    .bann_sec ul li i {
+      color: #ff8146;
+      margin-right: 8px;
+    }
 
-      .btn-call:hover {
-        background-color: #e76f36;
-        text-decoration: none;
-      }
+    /* Call button */
+    .btn-call {
+      background-color: #ff8146;
+      border: none;
+      padding: 12px 24px;
+      color: white;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
 
-      /* Glassmorphism form box */
-      .glass-bg {
-        background: rgba(250, 238, 238, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-        border: 2px solid white;
-        border-radius: 16px;
-      }
+    .btn-call:hover {
+      background-color: #e76f36;
+      text-decoration: none;
+    }
 
-      /* Form input fields */
-      .form-control,
-      .form-select {
-        border-radius: 8px;
-        height: 46px;
-        background-color: white;
-        color: #111010;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-      }
+    /* Glassmorphism form box */
+    .glass-bg {
+      background: rgba(250, 238, 238, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 2px solid white;
+      border-radius: 16px;
+    }
 
-      .form-control::placeholder,
-      .form-select {
-        color: #080808;
-        font-size: 18px;
-      }
+    /* Form input fields */
+    .form-control,
+    .form-select {
+      border-radius: 8px;
+      height: 46px;
+      background-color: white;
+      color: #111010;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
 
-      /* .form-control:focus,
+    .form-control::placeholder,
+    .form-select {
+      color: #080808;
+      font-size: 18px;
+    }
+
+    /* .form-control:focus,
 .form-select:focus {
   border-color: #FF8146;
   box-shadow: #FF8146;
 } */
 
-      /* Submit button in form */
-      button[type="submit"] {
-        background-color: #ff8146;
-        border: none;
-        padding: 12px;
-        border-radius: 8px;
-        font-weight: 600;
-        color: #fff;
-        transition: 0.3s;
-      }
+    /* Submit button in form */
+    button[type="submit"] {
+      background-color: #ff8146;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #fff;
+      transition: 0.3s;
+    }
 
-      button[type="submit"]:hover {
-        background-color: #e76f36;
-      }
+    button[type="submit"]:hover {
+      background-color: #e76f36;
+    }
 
-      /* Technician image beside the form */
+    /* Technician image beside the form */
+    .technician-img2 {
+      position: absolute;
+      bottom: 0;
+      right: -80px;
+      width: 130px;
+    }
+
+    @media (max-width: 992px) {
       .technician-img2 {
-        position: absolute;
-        bottom: 0;
-        right: -80px;
-        width: 130px;
+        display: none;
       }
 
-      @media (max-width: 992px) {
-        .technician-img2 {
-          display: none;
-        }
-
-        .bann_sec {
-          text-align: center;
-        }
-
-        .btn-call {
-          display: inline-block;
-          margin-top: 20px;
-        }
+      .bann_sec {
+        text-align: center;
       }
-    </style>
-  </head>
 
-  <body class="">
-    <!-- 2nd Sec  -->
+      .btn-call {
+        display: inline-block;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
 
-    <section class="bann_sec" id="forQuotebann">
-      <div class="container">
-        <div class="row d-flex justify-content-center linestyle">
-          <div class="d-flex justify-content-between linediv">
-            <div class="lines"></div>
-            <div class="lines"></div>
+<body class="">
+  <!-- 2nd Sec  -->
+
+  <section class="bann_sec" id="forQuotebann">
+    <div class="container">
+      <div class="row d-flex justify-content-center linestyle">
+        <div class="d-flex justify-content-between linediv">
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </div>
+      <a href="https://gtecplumbing.co.uk/" class="bkVisit text-center d-block"
+        style="color: white; background-color: #ff8146; width: 600px">Click Here To Visit Our Main Website</a>
+      <header class="topHEad py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+          <a href="" class="logAnch"><img src="images/logo (2).png" alt="G-TEC Logo" class="h-14" /></a>
+          <div class="topHEad_txxt">
+            <p>Commercial Heating <span>Repair in Manchester</span></p>
+          </div>
+
+          <div class="safe_divvv d-flex align-items-center">
+            <div class="gasSafeDV">
+              <img src="images/gassafe.png" alt="Gas Safe" />
+            </div>
+            <div class="whatsSafeDV">
+              <img src="images/WhatsApp Image 2025-02-22 at 15.35.17_0167e07f.jpg" alt="WhatsApp" />
+            </div>
+
+            <!--<button class="navbar-toggler d-lg-none" type="button">-->
+            <!--    <span class="navbar-toggler-icon"></span>-->
+            <!--</button>-->
           </div>
         </div>
-        <a
-          href="https://gtecplumbing.co.uk/"
-          class="bkVisit text-center d-block"
-          style="color: white; background-color: #ff8146; width: 600px"
-          >Click Here To Visit Our Main Website</a
-        >
-        <header class="topHEad py-2">
-          <div
-            class="container d-flex justify-content-between align-items-center"
-          >
-            <a href="" class="logAnch"
-              ><img src="images/logo (2).png" alt="G-TEC Logo" class="h-14"
-            /></a>
-            <div class="topHEad_txxt">
-              <p>Commercial Heating <span>Repair in Manchester</span></p>
-            </div>
+      </header>
+      <div class="row align-items-center justify-content-between">
+        <!-- Text Section -->
+        <div class="col-lg-6">
+          <h1 class="mb-4">
+            G-Tec – Keeping Manchester Warm, One Pipe At A Time!
+          </h1>
+          <p class="text-light mb-3" style="font-size: 20px">
+            Trusted heating and plumbing experts delivering rapid, efficient
+            solutions right when you need them.
+          </p>
+          <ul class="mb-4">
+            <li style="font-size: 18px">
+              <i class="fa-solid fa-check-circle" style="font-size: 18px"></i>
+              Rapid Repairs & Maintenance
+            </li>
+            <li style="font-size: 18px">
+              <i class="fa-solid fa-check-circle" style="font-size: 18px"></i>
+              Expert Installations
+            </li>
+            <li style="font-size: 18px">
+              <i class="fa-solid fa-check-circle" style="font-size: 18px"></i>
+              Energy-Efficient Solutions
+            </li>
+          </ul>
+          <a class="btn btn-call" href="tel:+447843277711"><i class="fa-solid fa-phone"></i> 07843277711</a>
+          <a class="btn btn-call" href="tel:+441617925446" style="margin-left: 20px"><img src="images/telephone.png"
+              style="width: 20px" />
+            01617925446</a>
+        </div>
 
-            <div class="safe_divvv d-flex align-items-center">
-              <div class="gasSafeDV">
-                <img src="images/gassafe.png" alt="Gas Safe" />
-              </div>
-              <div class="whatsSafeDV">
-                <img
-                  src="images/WhatsApp Image 2025-02-22 at 15.35.17_0167e07f.jpg"
-                  alt="WhatsApp"
-                />
-              </div>
+        <!-- Form with Image -->
+        <div class="col-lg-5 position-relative">
+          <div class="formBox glass-bg shadow p-4 rounded-4">
+            <h2 class="text-white mb-3 text-center">
+              Book Your <span style="color: #ec6425"> Appointment </span>
+            </h2>
+            <form id="serviceForm" onsubmit="return validateForm(event)">
+              <input type="text" id="name" class="form-control mb-3" placeholder="Your Name" />
+              <small id="nameError" class="text-danger"></small>
 
-              <!--<button class="navbar-toggler d-lg-none" type="button">-->
-              <!--    <span class="navbar-toggler-icon"></span>-->
-              <!--</button>-->
-            </div>
-          </div>
-        </header>
-        <div class="row align-items-center justify-content-between">
-          <!-- Text Section -->
-          <div class="col-lg-6">
-            <h1 class="mb-4">
-              G-Tec – Keeping Manchester Warm, One Pipe At A Time!
-            </h1>
-            <p class="text-light mb-3" style="font-size: 20px">
-              Trusted heating and plumbing experts delivering rapid, efficient
-              solutions right when you need them.
-            </p>
-            <ul class="mb-4">
-              <li style="font-size: 18px">
-                <i class="fa-solid fa-check-circle" style="font-size: 18px"></i>
-                Rapid Repairs & Maintenance
-              </li>
-              <li style="font-size: 18px">
-                <i class="fa-solid fa-check-circle" style="font-size: 18px"></i>
-                Expert Installations
-              </li>
-              <li style="font-size: 18px">
-                <i class="fa-solid fa-check-circle" style="font-size: 18px"></i>
-                Energy-Efficient Solutions
-              </li>
-            </ul>
-            <a class="btn btn-call" href="tel:+447843277711"
-              ><i class="fa-solid fa-phone"></i> 07843277711</a
-            >
-            <a
-              class="btn btn-call"
-              href="tel:+441617925446"
-              style="margin-left: 20px"
-              ><img src="images/telephone.png" style="width: 20px" />
-              01617925446</a
-            >
+              <input type="email" id="email" class="form-control mb-3" placeholder="Your Email" />
+              <small id="emailError" class="text-danger"></small>
+
+              <input type="tel" id="phone" class="form-control mb-3" placeholder="Your Phone" />
+              <small id="phoneError" class="text-danger"></small>
+
+              <select id="service" class="form-select mb-3">
+                <option value="">Select Your Service</option>
+                <option>Commercial Gas Engineers</option>
+                <option>Central heating</option>
+                <option>Underfloor Heating</option>
+                <option>Power Flushing</option>
+              </select>
+              <small id="serviceError" class="text-danger"></small>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Submit Now
+              </button>
+            </form>
           </div>
 
-          <!-- Form with Image -->
-          <div class="col-lg-5 position-relative">
-            <div class="formBox glass-bg shadow p-4 rounded-4">
-              <h2 class="text-white mb-3 text-center">
-                Book Your <span style="color: #ec6425"> Appointment </span>
-              </h2>
-              <form id="serviceForm" onsubmit="return validateForm(event)">
-                <input
-                  type="text"
-                  id="name"
-                  class="form-control mb-3"
-                  placeholder="Your Name"
-                />
-                <small id="nameError" class="text-danger"></small>
-
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control mb-3"
-                  placeholder="Your Email"
-                />
-                <small id="emailError" class="text-danger"></small>
-
-                <input
-                  type="tel"
-                  id="phone"
-                  class="form-control mb-3"
-                  placeholder="Your Phone"
-                />
-                <small id="phoneError" class="text-danger"></small>
-
-                <select id="service" class="form-select mb-3">
-                  <option value="">Select Your Service</option>
-                  <option>Plumbing Repair</option>
-                  <option>Heating System Installation</option>
-                  <option>Maintenance Check</option>
-                </select>
-                <small id="serviceError" class="text-danger"></small>
-
-                <button type="submit" class="btn btn-primary w-100">
-                  Submit Now
-                </button>
-              </form>
-            </div>
-
-            <!--     
+          <!--     
                    
             <img src="images/Bhadrolok.png" alt="Technician" class="technician-img2"> -->
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!---Brands -->
+  <!---Brands -->
 
-    <section class="brands-section py-5">
-      <div class="container">
-        <div class="brands-wrapper">
-          <div class="brands-content">
-            <div class="section-heading">
-              <span class="accent-border"></span>
-              <h2 class="fw-bold gradient-text" style="color: #ec6425">
-                Trusted Partners in Quality
-              </h2>
-              <p class="brands-subtext">
-                At G-Tec, we collaborate with industry-leading brands to bring
-                you exceptional plumbing and heating solutions. Our partnerships
-                ensure access to innovative technologies and reliable products
-                for your home.
-              </p>
-            </div>
-
-            <div class="brand-grid">
-              <div class="brand-card">
-                <img
-                  src="images/Honeywell_logo.svg.png"
-                  alt="Brand 1"
-                  class="brand-logo"
-                />
-              </div>
-              <div class="brand-card">
-                <img
-                  src="images/Worcester-Bosch-Logo.png"
-                  alt="Brand 2"
-                  class="brand-logo"
-                />
-              </div>
-              <div class="brand-card">
-                <img
-                  src="images/valillant.png"
-                  alt="Brand 3"
-                  class="brand-logo"
-                />
-              </div>
-              <div class="brand-card">
-                <img
-                  src="images/Viessmann-logo.svg.png"
-                  alt="Brand 4"
-                  class="brand-logo"
-                />
-              </div>
-              <div class="brand-card">
-                <img
-                  src="images/samsung.png"
-                  alt="Brand 4"
-                  class="brand-logo"
-                />
-              </div>
-              <div class="brand-card">
-                <img
-                  src="images/Mitsubishi-logo.png"
-                  alt="Brand 4"
-                  class="brand-logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="BookSection py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="display-5 fw-bold mb-3" style="color: #ec6425">
-            How To Book Us?
-          </h2>
-          <div class="divider mx-auto bg-orange"></div>
-          <p class="mt-3" style="font-weight: 500; font-size: 20px">
-            Simple steps to schedule your service
-          </p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="step-card shadow-lg p-4 text-center h-100">
-              <div
-                class="icon-wrapper bg-light-orange rounded-circle p-3 mx-auto mb-4"
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
-              >
-                <img src="images/fillimage.png" alt="Form" class="w-50" />
-              </div>
-              <h4 class="fw-bold mb-3">Complete the Form</h4>
-              <p class="text-muted">
-                Provide your basic details through our simple online form
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="step-card shadow-lg p-4 text-center h-100">
-              <div
-                class="icon-wrapper bg-light-orange rounded-circle p-3 mx-auto mb-4"
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
-              >
-                <img src="images/SIMPLE FORM.png" alt="Services" class="w-50" />
-              </div>
-              <h4 class="fw-bold mb-3">Choose Service</h4>
-              <p class="text-muted">
-                Select from our range of professional services
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="step-card shadow-lg p-4 text-center h-100">
-              <div
-                class="icon-wrapper bg-light-orange rounded-circle p-3 mx-auto mb-4"
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
-              >
-                <img
-                  src="images/CALL BACK.png"
-                  alt="Confirmation"
-                  class="w-50"
-                />
-              </div>
-              <h4 class="fw-bold mb-3">Get Confirmation</h4>
-              <p class="text-muted">
-                Our expert will contact you to finalize details
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ************** 4th Sec  -->
-
-    <section class="expSec pb-5">
-      <div class="container">
-        <div class="bkHead bkHead_1 text-center">
-          <h2 class="fw-bold">Expert Plumbing Solutions</h2>
-          <p class="">Reliable & Fast Service - 24/7 Emergency Repairs</p>
-        </div>
-
-        <div class="expRoww row mt-5 mb-3">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="expCardd">
-              <div class="expImgg">
-                <img src="images/gaseng.jpg" alt="" />
-              </div>
-              <h5>Commercial Gas Engineers</h5>
-              <p>
-              Professional commercial gas engineers providing safe installations, maintenance, and repairs for business.
-              </p>
-              <button>Book Now</button>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="expCardd">
-              <div class="expImgg">
-                <img src="images/gassaftyimage (1).png" alt="" />
-              </div>
-              <h5>Landlord Gas Safety</h5>
-              <p>
-                Comprehensive landlord gas safety checks ensuring compliance and safety for rental properties and tenants.
-              </p>
-              <button>Book Now</button>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="expCardd">
-              <div class="expImgg">
-                <img src="images/floorheat2.jpg" alt="" />
-              </div>
-              <h5>Underfloor Heating</h5>
-              <p>
-                Underfloor heating installation and maintenance for efficient, comfortable warmth throughout your home.
-              </p>
-              <button>Book Now</button>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="expCardd">
-              <div class="expImgg">
-                <img src="images/power1.jpg" alt="" />
-              </div>
-              <h5>Power Flushing</h5>
-              <p>
-                Power flushing services to clean heating systems, improving efficiency and extending the lifespan of radiators.
-              </p>
-              <button>Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--- service to be expected --->
-
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Left: Text Content -->
-          <div class="col-lg-7 mb-4 mb-lg-0">
-            <h2 class="fw-bold mb-4" style="color: #ec6425">
-              Service to be expected ?
+  <section class="brands-section py-5">
+    <div class="container">
+      <div class="brands-wrapper">
+        <div class="brands-content">
+          <div class="section-heading">
+            <span class="accent-border"></span>
+            <h2 class="fw-bold gradient-text" style="color: #ec6425">
+              Trusted Partners in Quality
             </h2>
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    We provide <strong>service with a smile</strong>
-                  </li>
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    We provide <strong>service with a smile</strong>
-                  </li>
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    We provide <strong>service with a smile</strong>
-                  </li>
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    We provide <strong>service with a smile</strong>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    We provide <strong>service with a smile</strong>
-                  </li>
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    We provide <strong>service with a smile</strong>
-                  </li>
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    We provide <strong>service with a smile</strong>
-                  </li>
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    We provide <strong>service with a smile</strong>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <a
-              href="#"
-              class="btn rounded-pill px-4 py-2 mt-3 fw-semibold"
-              style="background-color: #ec6425; color: white"
-            >
-              Find out more
-            </a>
-          </div>
-
-          <!-- Right: Image -->
-          <div class="col-lg-5 text-center">
-            <img
-              src="images/cental.jpg"
-              alt="Plumber working"
-              class="rounded shadow"
-              style="width: 400px; height: 430px"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5th sec  -->
-
-    <section class="chosSec position-relative">
-      <div class="container-fluid">
-        <div class="chosHead">
-          <h2>Why Choose Us ?</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 chosRow_1">
-            <h4>G-Tec - Manchester's</h4>
-            <h2>Trusted Plumbing & Heating Experts</h2>
-
-            <p>
-              At G-Tec, we provide top-tier plumbing and heating services across
-              Manchester, ensuring your home stays warm, efficient, and safe all
-              year round. Our experienced professionals are committed to
-              delivering high-quality solutions, from emergency repairs to
-              expert installations.
+            <p class="brands-subtext">
+              At G-Tec, we collaborate with industry-leading brands to bring
+              you exceptional plumbing and heating solutions. Our partnerships
+              ensure access to innovative technologies and reliable products
+              for your home.
             </p>
+          </div>
 
-            <p>
-              We prioritize customer satisfaction with reliable, cost- effective
-              services tailored to your needs. Using only the best materials and
-              the latest technology, we guarantee long-lasting results. Whether
-              you need routine maintenance, urgent repairs, or a full heating
-              system installation, G-Tec is your go-to choice for expertise,
-              transparency, and exceptional service.
+          <div class="brand-grid">
+            <div class="brand-card">
+              <img src="images/Honeywell_logo.svg.png" alt="Brand 1" class="brand-logo" />
+            </div>
+            <div class="brand-card">
+              <img src="images/Worcester-Bosch-Logo.png" alt="Brand 2" class="brand-logo" />
+            </div>
+            <div class="brand-card">
+              <img src="images/valillant.png" alt="Brand 3" class="brand-logo" />
+            </div>
+            <div class="brand-card">
+              <img src="images/Viessmann-logo.svg.png" alt="Brand 4" class="brand-logo" />
+            </div>
+            <div class="brand-card">
+              <img src="images/samsung.png" alt="Brand 4" class="brand-logo" />
+            </div>
+            <div class="brand-card">
+              <img src="images/Mitsubishi-logo.png" alt="Brand 4" class="brand-logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="BookSection py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3" style="color: #ec6425">
+          How To Book Us?
+        </h2>
+        <div class="divider mx-auto bg-orange"></div>
+        <p class="mt-3" style="font-weight: 500; font-size: 20px">
+          Simple steps to schedule your service
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="step-card shadow-lg p-4 text-center h-100">
+            <div class="icon-wrapper bg-light-orange rounded-circle p-3 mx-auto mb-4" style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                ">
+              <img src="images/fillimage.png" alt="Form" class="w-50" />
+            </div>
+            <h4 class="fw-bold mb-3">Complete the Form</h4>
+            <p class="text-muted">
+              Provide your basic details through our simple online form
             </p>
+          </div>
+        </div>
 
-            <p>Trust G-Tec — Keeping Your Home Comfortable and Secure.</p>
+        <div class="col-md-4">
+          <div class="step-card shadow-lg p-4 text-center h-100">
+            <div class="icon-wrapper bg-light-orange rounded-circle p-3 mx-auto mb-4" style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                ">
+              <img src="images/SIMPLE FORM.png" alt="Services" class="w-50" />
+            </div>
+            <h4 class="fw-bold mb-3">Choose Service</h4>
+            <p class="text-muted">
+              Select from our range of professional services
+            </p>
+          </div>
+        </div>
 
-            <div class="chosBtn_dv">
-              <button onclick="window.location.href='tel:+441617925446';">
-                0161 792 5446
-              </button>
-              <button onclick="window.location.href='#forQuotebann';">
-                GET A FREE QUOTATION
-              </button>
+        <div class="col-md-4">
+          <div class="step-card shadow-lg p-4 text-center h-100">
+            <div class="icon-wrapper bg-light-orange rounded-circle p-3 mx-auto mb-4" style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                ">
+              <img src="images/CALL BACK.png" alt="Confirmation" class="w-50" />
+            </div>
+            <h4 class="fw-bold mb-3">Get Confirmation</h4>
+            <p class="text-muted">
+              Our expert will contact you to finalize details
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ************** 4th Sec  -->
+
+  <section class="expSec pb-5">
+    <div class="container">
+      <div class="bkHead bkHead_1 text-center">
+        <h2 class="fw-bold">Expert Plumbing Solutions</h2>
+        <p class="">Reliable & Fast Service - 24/7 Emergency Repairs</p>
+      </div>
+
+      <div class="expRoww row mt-5 mb-3">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="expCardd">
+            <div class="expImgg">
+              <img src="images/gaseng.jpg" alt="" />
+            </div>
+            <h5>Commercial Gas Engineers</h5>
+            <p>
+              Professional commercial gas engineers providing safe installations, maintenance, and repairs for business.
+            </p>
+            <a href="#forQuotebann" style="text-decoration: none;"><button>Book Now</button></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="expCardd">
+            <div class="expImgg">
+              <img src="images/centralheating2.jfif" alt="" />
+            </div>
+            <h5>Central heating
+            </h5>
+            <p>
+              Reliable central heating services in Manchester for efficient installations, repairs, and maintenance to
+              ensure warmth.
+
+            </p>
+            <a href="#forQuotebann" style="text-decoration: none;"><button>Book Now</button></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="expCardd">
+            <div class="expImgg">
+              <img src="images/floorheat2.jpg" alt="" />
+            </div>
+            <h5>Underfloor Heating</h5>
+            <p>
+              Underfloor heating installation and maintenance for efficient, comfortable warmth throughout your home.
+            </p>
+            <a href="#forQuotebann" style="text-decoration: none;"><button>Book Now</button></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="expCardd">
+            <div class="expImgg">
+              <img src="images/power1.jpg" alt="" />
+            </div>
+            <h5>Power Flushing</h5>
+            <p>
+              Power flushing services to clean heating systems, improving efficiency and extending the lifespan of
+              radiators.
+            </p>
+            <a href="#forQuotebann" style="text-decoration: none;"><button>Book Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--- service to be expected --->
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left: Text Content -->
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-4" style="color: #ec6425">
+            Service to be expected ?
+          </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  We provide <strong>service with a smile</strong>
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  We provide <strong>service with a smile</strong>
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  We provide <strong>service with a smile</strong>
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  We provide <strong>service with a smile</strong>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  We provide <strong>service with a smile</strong>
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  We provide <strong>service with a smile</strong>
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  We provide <strong>service with a smile</strong>
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  We provide <strong>service with a smile</strong>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="chosIMGG">
-              <img src="images/commercialheating.png" alt="" />
+          <a href="#" class="btn rounded-pill px-4 py-2 mt-3 fw-semibold"
+            style="background-color: #ec6425; color: white">
+            Find out more
+          </a>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="col-lg-5 text-center">
+          <img src="images/cental.jpg" alt="Plumber working" class="rounded shadow"
+            style="width: 400px; height: 430px" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5th sec  -->
+
+  <section class="chosSec position-relative">
+    <div class="container-fluid">
+      <div class="chosHead">
+        <h2>Why Choose Us ?</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 chosRow_1">
+          <h4>G-Tec - Manchester's</h4>
+          <h2>Trusted Plumbing & Heating Experts</h2>
+
+          <p>
+            At G-Tec, we provide top-tier plumbing and heating services across
+            Manchester, ensuring your home stays warm, efficient, and safe all
+            year round. Our experienced professionals are committed to
+            delivering high-quality solutions, from emergency repairs to
+            expert installations.
+          </p>
+
+          <p>
+            We prioritize customer satisfaction with reliable, cost- effective
+            services tailored to your needs. Using only the best materials and
+            the latest technology, we guarantee long-lasting results. Whether
+            you need routine maintenance, urgent repairs, or a full heating
+            system installation, G-Tec is your go-to choice for expertise,
+            transparency, and exceptional service.
+          </p>
+
+          <p>Trust G-Tec — Keeping Your Home Comfortable and Secure.</p>
+
+          <div class="chosBtn_dv">
+            <button onclick="window.location.href='tel:+441617925446';">
+              0161 792 5446
+            </button>
+            <button onclick="window.location.href='#forQuotebann';">
+              GET A FREE QUOTATION
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="chosIMGG">
+            <img src="images/commercialheating.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-section1 py-5">
+    <div class="container1">
+      <div class="brands-wrapper1" style="display: flex; justify-content: center">
+        <div class="brands-content1">
+          <div class="brand-grid1">
+            <div class="brand-card1">
+              <img src="images/wraslogo.png" alt="Brand 1" class="brand-logo1" />
+            </div>
+            <div class="brand-card1">
+              <img src="images/gassafe.png" alt="Brand 2" class="brand-logo1" />
+            </div>
+
+            <div class="brand-card1">
+              <img src="images/niceieaproved.png" alt="Brand 4" class="brand-logo1" />
+            </div>
+            <div class="brand-card1">
+              <img src="images/cscslogo.jpg" alt="Brand 4" class="brand-logo1" />
+            </div>
+            <div class="brand-card1">
+              <img src="images/wiaspslogo.jpg" alt="Brand 4" class="brand-logo1" />
+            </div>
+            <div class="brand-card1">
+              <img src="images/hselogo.png" alt="Brand 4" class="brand-logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--******** Footer ************-->
+
+  <footer>
+    <section class="foot_sec">
+      <div class="lasttt">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="" class="logAnch_lsst"><img src="images/logo (2).png" alt="G-TEC Logo" /></a>
+            </div>
+
+            <div class="sscc col-md-6">
+              <p>
+                GTEC Plumbers are available in Manchester City Centre. We also
+                cover Prestwich Plumbing, Whitefield Plumbing, Broughton Park
+                Plumbing & Crumpsall Plumbing needs
+              </p>
+              <div class="lastt_socc" style="display: flex; justify-content: end">
+                <a href="https://x.com/gtec38"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/GtecGasSevices"><i class="ri-facebook-box-line"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="brands-section1 py-5">
-      <div class="container1">
-        <div
-          class="brands-wrapper1"
-          style="display: flex; justify-content: center"
-        >
-          <div class="brands-content1">
-            <div class="brand-grid1">
-              <div class="brand-card1">
-                <img
-                  src="images/wraslogo.png"
-                  alt="Brand 1"
-                  class="brand-logo1"
-                />
-              </div>
-              <div class="brand-card1">
-                <img
-                  src="images/gassafe.png"
-                  alt="Brand 2"
-                  class="brand-logo1"
-                />
-              </div>
-
-              <div class="brand-card1">
-                <img
-                  src="images/niceieaproved.png"
-                  alt="Brand 4"
-                  class="brand-logo1"
-                />
-              </div>
-              <div class="brand-card1">
-                <img
-                  src="images/cscslogo.jpg"
-                  alt="Brand 4"
-                  class="brand-logo1"
-                />
-              </div>
-              <div class="brand-card1">
-                <img
-                  src="images/wiaspslogo.jpg"
-                  alt="Brand 4"
-                  class="brand-logo1"
-                />
-              </div>
-              <div class="brand-card1">
-                <img
-                  src="images/hselogo.png"
-                  alt="Brand 4"
-                  class="brand-logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="footLAst py-2">
+      <div class="container d-flex justify-content-center align-items-center gap-4">
+        <p>
+          &copy; 2025 All Rights Reserved
+          <a href="https://gtecplumbing.co.uk/">G-Tec</a>
+        </p>
+        <p>
+          Designed & Developed by
+          <a href="https://kyleinfotech.co.in/">Kyle Infotech</a>
+        </p>
       </div>
-    </section>
-    <!--******** Footer ************-->
+    </div>
+  </footer>
 
-    <footer>
-      <section class="foot_sec">
-        <div class="lasttt">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <a href="" class="logAnch_lsst"
-                  ><img src="images/logo (2).png" alt="G-TEC Logo"
-                /></a>
-              </div>
+  <!-- <div class="sss"><img style="width: 100%;" src="images/justttt.png" alt=""></div> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-              <div class="sscc col-md-6">
-                <p>
-                  GTEC Plumbers are available in Manchester City Centre. We also
-                  cover Prestwich Plumbing, Whitefield Plumbing, Broughton Park
-                  Plumbing & Crumpsall Plumbing needs
-                </p>
-                <div
-                  class="lastt_socc"
-                  style="display: flex; justify-content: end"
-                >
-                  <a href="https://x.com/gtec38"
-                    ><i class="fa-brands fa-x-twitter"></i
-                  ></a>
-                  <a href="https://www.facebook.com/GtecGasSevices"
-                    ><i class="ri-facebook-box-line"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <script>
+    function validateForm(event) {
+      let isValid = true;
 
-      <div class="footLAst py-2">
-        <div
-          class="container d-flex justify-content-center align-items-center gap-4"
-        >
-          <p>
-            &copy; 2025 All Rights Reserved
-            <a href="https://kyletest.in/gtec-landing/">G-Tec</a>
-          </p>
-          <p>
-            Designed & Developed by
-            <a href="https://kyleinfotech.co.in/">Kyle Infotech</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+      // Clear previous error messages
+      document.getElementById("nameError").innerText = "";
+      document.getElementById("emailError").innerText = "";
+      document.getElementById("phoneError").innerText = "";
+      document.getElementById("serviceError").innerText = "";
 
-    <!-- <div class="sss"><img style="width: 100%;" src="images/justttt.png" alt=""></div> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-      function validateForm(event) {
-        let isValid = true;
-
-        // Clear previous error messages
-        document.getElementById("nameError").innerText = "";
-        document.getElementById("emailError").innerText = "";
-        document.getElementById("phoneError").innerText = "";
-        document.getElementById("serviceError").innerText = "";
-
-        // Name validation
-        let name = document.getElementById("name").value.trim();
-        if (name === "") {
-          document.getElementById("nameError").innerText = "Name is required.";
-          isValid = false;
-        }
-
-        // Email validation
-        let email = document.getElementById("email").value.trim();
-        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (email === "") {
-          document.getElementById("emailError").innerText =
-            "Email is required.";
-          isValid = false;
-        } else if (!emailPattern.test(email)) {
-          document.getElementById("emailError").innerText =
-            "Enter a valid email.";
-          isValid = false;
-        }
-
-        // Phone validation
-        let phone = document.getElementById("phone").value.trim();
-        let phonePattern = /^[0-9]{10}$/;
-        if (phone === "") {
-          document.getElementById("phoneError").innerText =
-            "Phone number is required.";
-          isValid = false;
-        } else if (!phonePattern.test(phone)) {
-          document.getElementById("phoneError").innerText =
-            "Enter a valid 10-digit phone number.";
-          isValid = false;
-        }
-
-        // Service validation
-        let service = document.getElementById("service").value;
-        if (service === "") {
-          document.getElementById("serviceError").innerText =
-            "Please select a service.";
-          isValid = false;
-        }
-
-        if (!isValid) {
-          event.preventDefault();
-        }
-        return isValid;
+      // Name validation
+      let name = document.getElementById("name").value.trim();
+      if (name === "") {
+        document.getElementById("nameError").innerText = "Name is required.";
+        isValid = false;
       }
-    </script>
-  </body>
+
+      // Email validation
+      let email = document.getElementById("email").value.trim();
+      let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (email === "") {
+        document.getElementById("emailError").innerText =
+          "Email is required.";
+        isValid = false;
+      } else if (!emailPattern.test(email)) {
+        document.getElementById("emailError").innerText =
+          "Enter a valid email.";
+        isValid = false;
+      }
+
+      // Phone validation
+      let phone = document.getElementById("phone").value.trim();
+      let phonePattern = /^[0-9]{10}$/;
+      if (phone === "") {
+        document.getElementById("phoneError").innerText =
+          "Phone number is required.";
+        isValid = false;
+      } else if (!phonePattern.test(phone)) {
+        document.getElementById("phoneError").innerText =
+          "Enter a valid 10-digit phone number.";
+        isValid = false;
+      }
+
+      // Service validation
+      let service = document.getElementById("service").value;
+      if (service === "") {
+        document.getElementById("serviceError").innerText =
+          "Please select a service.";
+        isValid = false;
+      }
+
+      if (!isValid) {
+        event.preventDefault();
+      }
+      return isValid;
+    }
+  </script>
+</body>
+
 </html>

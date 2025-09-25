@@ -120,10 +120,10 @@
 }
 
 .manPiccc {
-  position: absolute;
-  width: 32% !important;
-  bottom: -100px;
-  right: 16%;
+ position: absolute;
+    width: 35% !important;
+    bottom: 0px;
+    right: 10%;
 }
 .bannRow_1 {
   padding-bottom: 60px;
